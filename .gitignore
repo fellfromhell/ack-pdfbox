@@ -18,3 +18,17 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+.idea/*
+.idea/ack-pdfbox.iml
+.idea/workspace.xml
+META-INF/
+ack-pdfbox.properties
+ack-pdfbox.xml
+dist/debugger-app-2.0.4.jar
+out/
+test/i-9-filled.pdf
+test/i-9.pdf.json.zip
+test/n-400.pdf
+test/n-400.pdf.json
+
+ackpdfbox/ackpdfbox.iml

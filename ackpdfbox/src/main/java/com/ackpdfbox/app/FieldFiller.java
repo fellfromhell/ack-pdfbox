@@ -49,6 +49,7 @@ public class FieldFiller{
     PDDocument pdf = PDDocument.load( new File(this.pdfPath) );
     PDDocumentCatalog docCatalog = pdf.getDocumentCatalog();
     PDAcroForm acroForm = docCatalog.getAcroForm();
+    acroForm.setXFA(null);
 
     for(JsonElement field : jarr){
       JsonObject fObject = field.getAsJsonObject();
@@ -102,7 +103,7 @@ public class FieldFiller{
         pdField.getCOSObject().clear();
       }
     }
-
+    acroForm.flatten();
     return pdf;
    }
 
